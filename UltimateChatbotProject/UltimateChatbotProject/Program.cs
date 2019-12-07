@@ -8,18 +8,18 @@ namespace UltimateChatbotProject
         static void Main(string[] args)
         {
             Random gen = new Random();
-            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, other key = no)");
-            var button = Console.ReadKey();
-            if (button.Key == ConsoleKey.Enter)
+            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
+            ConsoleKeyInfo button = Console.ReadKey();
+            if (button.Key == ConsoleKey.R)
             {
                 Console.WriteLine("Welcome to Rock, Paper, Scissors!");
                 Console.WriteLine("Type R (Rock), P (Paper), or S (Scissors)!");
-
+                
                 string compchoices = "";
 
                 string userchoices = "";
 
-                string userchoice = Console.ReadLine();
+                ConsoleKeyInfo userchoice = Console.ReadKey();
 
 
 
@@ -127,7 +127,7 @@ namespace UltimateChatbotProject
 
 
 
-                if (userchoice == "R")
+                if (userchoice.Key == ConsoleKey.R)
 
 
 
@@ -140,84 +140,14 @@ namespace UltimateChatbotProject
 
 
                 }
-
-
-
-                else
-
-
-
+                else if (userchoice.Key == ConsoleKey.P)
                 {
-
-
-
-                    if (userchoice == "P")
-
-
-
-                    {
-
-
-
-                        userchoices = "Paper";
-
-
-
-                    }
-
-
-
-                    else
-
-
-
-                    {
-
-
-
-                        if (userchoice == "S")
-
-
-
-                        {
-
-
-
-                            userchoices = "Scissors";
-
-
-
-                        }
-
-
-
-                        else
-
-
-
-                        {
-
-
-
-                            Console.WriteLine("Quitting...");
-
-
-
-                            Environment.Exit(0);
-
-
-
-                        }
-
-
-
-                    }
-
-
-
+                    userchoices = "Paper";
                 }
-
-
+                else if (userchoice.Key == ConsoleKey.S)
+                {
+                    userchoices = "Scissors";
+                }
 
                 // If userchoice and compchoice statements  
 
@@ -393,7 +323,7 @@ namespace UltimateChatbotProject
 
             }
             //The chatbot software below
-            else
+            else if (button.Key == ConsoleKey.C)
             {
                 Console.WriteLine("");
                 Console.WriteLine("iChatbot is loading...");
@@ -453,7 +383,7 @@ namespace UltimateChatbotProject
                 {
                     Console.WriteLine("I haven't watched that yet");
                     Console.WriteLine("Is it available on Netflix?");
-                    var yesbutton = Console.ReadKey();
+                    ConsoleKeyInfo yesbutton = Console.ReadKey();
                     if (yesbutton.Key == ConsoleKey.Y)
                     {
                         Console.WriteLine("I'll check it out");
@@ -479,30 +409,31 @@ namespace UltimateChatbotProject
                     {
                         Console.WriteLine("I'll listen to it soon.");
                     }
-                    else
+                    else if (spotifybutton.Key == ConsoleKey.N)
                     {
                         Console.WriteLine("I'll try to listen to it sometime.");
                     }
                 }
 
                 Console.WriteLine(name + " do you have any pets?");
-                string pets = Console.ReadLine();
+                ConsoleKeyInfo pets = Console.ReadKey();
 
-                if (pets == "yes")
+
+                if (pets.Key == ConsoleKey.Y)
                 {
-                    Console.WriteLine("Do you have a cat or a dog " + name + " ?");
-                    string catdog = Console.ReadLine();
+                    Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D) ");
+                    ConsoleKeyInfo catdog = Console.ReadKey();
 
-                    if (catdog == "cat")
+                    if (catdog.Key == ConsoleKey.C)
                     {
                         Console.WriteLine("I have a cat");
-                        Console.WriteLine("Is your cat big/small?");
-                        var catbutton = Console.ReadKey();
-                        if (catbutton.Key == ConsoleKey.B)
+                        Console.WriteLine("Is your cat big/small? (B/S)");
+                        ConsoleKeyInfo catsize = Console.ReadKey();
+                        if (catsize.Key == ConsoleKey.B)
                         {
                             Console.WriteLine("I like big cats.");
                         }
-                        else
+                        else if (catsize.Key == ConsoleKey.S)
                         {
                             Console.WriteLine("Small cats are cute!");
                         }
@@ -512,7 +443,7 @@ namespace UltimateChatbotProject
                         Console.WriteLine("I don't like dogs");
                     }
                 }
-                else
+                else if (pets.Key == ConsoleKey.N)
                 {
                     Console.WriteLine("I understand");
                 }
@@ -529,6 +460,12 @@ namespace UltimateChatbotProject
                     Console.WriteLine("I hope to improve for next time.");
                 }
                 
+            }
+            else if (button.Key == ConsoleKey.Q)
+            {
+                Console.WriteLine("Quitting...");
+                Thread.Sleep(5000);
+                Environment.Exit(0);
             }
         
         //Prevent the application from quitting automatically on completion.
