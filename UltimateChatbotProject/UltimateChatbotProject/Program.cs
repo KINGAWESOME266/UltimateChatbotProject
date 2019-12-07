@@ -12,7 +12,7 @@ namespace UltimateChatbotProject
             string compchoices = "";
 
 
-            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, C = iChatBot, Esc x2 = No + Quit)");
+            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, C = iChatBot, N = No + Quit)");
             var button = Console.ReadKey();
             if (button.Key == ConsoleKey.Enter)
             {
@@ -58,82 +58,228 @@ namespace UltimateChatbotProject
                     }
                     else
                     {
-                        if (userchoice == "S")
-                        {
-                            userchoices = "Scissors";
-                        }
-                        else
-                        {
-                            Console.WriteLine("Quitting...");
-                            Environment.Exit(0);
-                        }
-                    }
-                }
-                // If userchoice and compchoice statements
-                if (userchoices == "Rock" && compchoices == "Rock")
-                {
-                    Console.WriteLine("It's a draw!!");
-                }
-                else
-                {
-                    if (userchoices == "Rock" && compchoices == "Paper")
-                    {
-                        Console.WriteLine("The computer wins!");
-                    }
-                    else
-                    {
-                        if (userchoices == "Rock" && compchoices == "Scissors")
-                        {
-                            Console.WriteLine("The User wins!");
-                        }
-                        else
-                        {
-                            if (userchoices == "Paper" && compchoices == "Rock")
-                            {
-                                Console.WriteLine("The User Wins!");
-                            }
-                            else
-                            {
-                                if (userchoices == "Paper" && compchoices == "Scissors")
-                                {
-                                    Console.WriteLine("The Computer Wins!");
-                                }
-                                else
-                                {
-                                    if (userchoices == "Paper" && compchoices == "Paper")
-                                    {
-                                        Console.WriteLine("It's a Draw!");
-                                    }
-                                    else
-                                    {
-                                        if (userchoices == "Scissors" && compchoices == "Scissors")
-                                        {
-                                            Console.WriteLine("It's a Draw!");
-                                        }
-                                        else
-                                        {
-                                            if (userchoices == "Scissors" && compchoices == "Paper")
-                                            {
-                                                Console.WriteLine("The User Wins");
-                                            }
-                                            else
-                                            {
-                                                if (userchoices == "Scissors" && compchoices == "Rock")
-                                                {
-                                                    Console.WriteLine("The Computer Wins!");
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
 
+
+
+                        if (userchoice == "S")
+
+
+
+                        {
+
+
+
+                            userchoices = "Scissors";
+
+
+
+                        }
+
+
+
+                        else
+
+
+
+                        {
+
+
+
+                            Console.WriteLine("Quitting...");
+
+
+
+                            Environment.Exit(0);
+
+
+
+                        }
+
+
+
+                    }
+
+
+
+                }
+
+
+
+                // If userchoice and compchoice statements  
+
+
+
+                if (userchoices == "Rock" && compchoices == "Rock")
+
+
+
+                {
+
+
+
+                    Console.WriteLine("It's a draw!!");
+
+
+
+                }
+
+
+
+                else
+
+
+
+                {
+
+
+
+                    if (userchoices == "Rock" && compchoices == "Paper")
+
+
+
+                    {
+
+
+
+                        Console.WriteLine("The computer wins!");
+
+
+
+                    }
+
+
+
+                    else
+
+
+
+                    {
+
+
+
+                        if (userchoices == "Rock" && compchoices == "Scissors")
+
+
+
+                        {
+
+
+
+                            Console.WriteLine("The User wins!");
+
+
+
+                        }
+
+
+
+                        else
+
+
+
+                        {
+
+
+
+                            if (userchoices == "Paper" && compchoices == "Rock")
+
+                            {
+
+                                Console.WriteLine("The User Wins!");
+
+                            }
+
+                            else
+
+                            {
+
+                                if (userchoices == "Paper" && compchoices == "Scissors")
+
+                                {
+
+                                    Console.WriteLine("The Computer Wins!");
+
+                                }
+
+                                else
+
+                                {
+
+                                    if (userchoices == "Paper" && compchoices == "Paper")
+
+                                    {
+
+                                        Console.WriteLine("It's a Draw!");
+
+                                    }
+
+                                    else
+
+                                    {
+
+                                        if (userchoices == "Scissors" && compchoices == "Scissors")
+
+                                        {
+
+                                            Console.WriteLine("It's a Draw!");
+
+                                        }
+
+                                        else
+
+                                        {
+
+                                            if (userchoices == "Scissors" && compchoices == "Paper")
+
+                                            {
+
+                                                Console.WriteLine("The User Wins");
+
+                                            }
+
+                                            else
+
+                                            {
+
+                                                if (userchoices == "Scissors" && compchoices == "Rock")
+
+                                                {
+
+                                                    Console.WriteLine("The Computer Wins!");
+
+                                                }
+
+                                                else
+
+                                                {
+
+                                                    Console.WriteLine("Quitting...");
+
+                                                    Environment.Exit(0);
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+
+
+                    }
+                }
+
+
+            }
             //The chatbot software below
-            if(button.Key == ConsoleKey.C)
+            else
             {
                 Console.WriteLine("");
                 Console.WriteLine("iChatbot is loading...");
@@ -192,7 +338,7 @@ namespace UltimateChatbotProject
                 else
                 {
                     Console.WriteLine("I haven't watched that yet");
-                    Console.WriteLine("Is it available on Netflix? (Y/N)");
+                    Console.WriteLine("Is it available on Netflix?");
                     var yesbutton = Console.ReadKey();
                     if (yesbutton.Key == ConsoleKey.Y)
                     {
@@ -213,7 +359,7 @@ namespace UltimateChatbotProject
                 }
                 else
                 {
-                    Console.WriteLine("Is it on Spotify? (Y/N)");
+                    Console.WriteLine("Is it on Spotify?");
                     var spotifybutton = Console.ReadKey();
                     if (spotifybutton.Key == ConsoleKey.Y)
                     {
@@ -225,18 +371,18 @@ namespace UltimateChatbotProject
                     }
                 }
 
-                Console.WriteLine(name + " do you have any pets? (yes/no)");
+                Console.WriteLine(name + " do you have any pets?");
                 string pets = Console.ReadLine();
 
                 if (pets == "yes")
                 {
-                    Console.WriteLine("Do you have a cat or a dog " + name + " ? (cat/dog)");
+                    Console.WriteLine("Do you have a cat or a dog " + name + " ?");
                     string catdog = Console.ReadLine();
 
                     if (catdog == "cat")
                     {
                         Console.WriteLine("I have a cat");
-                        Console.WriteLine("Is your cat big/small? (b/s)");
+                        Console.WriteLine("Is your cat big/small?");
                         var catbutton = Console.ReadKey();
                         if (catbutton.Key == ConsoleKey.B)
                         {
@@ -270,13 +416,7 @@ namespace UltimateChatbotProject
                 }
                 
             }
-            //Quitting Program Below
-            var quitbutton = Console.ReadKey();
-            if (quitbutton.Key == ConsoleKey.Escape)
-            {
-                Console.WriteLine(" Quitting...");
-                Environment.Exit(0);
-            }
+        
         //Prevent the application from quitting automatically on completion.
         Console.ReadLine();
         }

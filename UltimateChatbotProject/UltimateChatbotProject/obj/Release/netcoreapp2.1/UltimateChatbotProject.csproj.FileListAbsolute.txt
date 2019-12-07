@@ -1,3 +1,0 @@
-/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/UltimateChatbotProject.csproj.CoreCompileInputs.cache
-/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/UltimateChatbotProject.AssemblyInfoInputs.cache
-/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/UltimateChatbotProject.AssemblyInfo.cs
