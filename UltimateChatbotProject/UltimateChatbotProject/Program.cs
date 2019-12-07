@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace UltimateChatbotProject
 {
@@ -7,14 +8,11 @@ namespace UltimateChatbotProject
         static void Main(string[] args)
         {
             Random gen = new Random();
-            Console.WriteLine("Welcomt to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, other key = no)");
+            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, other key = no)");
             var button = Console.ReadKey();
             if (button.Key == ConsoleKey.Enter)
             {
                 Console.WriteLine("Welcome to Rock, Paper, Scissors!");
-
-
-
                 Console.WriteLine("Type R (Rock), P (Paper), or S (Scissors)!");
 
                 string compchoices = "";
@@ -394,10 +392,12 @@ namespace UltimateChatbotProject
 
 
             }
+            //The chatbot software below
             else
             {
+                Console.WriteLine("");
                 Console.WriteLine("iChatbot is loading...");
-
+                Thread.Sleep(5000);
                 Console.WriteLine("Let's Introduce Ourselves");
                 Console.WriteLine("My name is Siri. What's yours?");
                 string name = Console.ReadLine();
