@@ -8,55 +8,169 @@ namespace UltimateChatbotProject
         static void Main(string[] args)
         {
             Random gen = new Random();
-            string userchoices = "";
-            string compchoices = "";
-
-
-            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, C = iChatBot, N = No + Quit)");
+            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. Do you want to play Rock, Paper, Scissors? (Enter = yes, other key = no)");
             var button = Console.ReadKey();
             if (button.Key == ConsoleKey.Enter)
             {
                 Console.WriteLine("Welcome to Rock, Paper, Scissors!");
                 Console.WriteLine("Type R (Rock), P (Paper), or S (Scissors)!");
+
+                string compchoices = "";
+
+                string userchoices = "";
+
                 string userchoice = Console.ReadLine();
+
+
+
                 int compchoice = gen.Next(0, 4);
 
+
+
                 // If compchoice statements  
+
+
+
                 if (compchoice == 1)
+
+
+
                 {
+
+
+
                     compchoices = "Rock";
+
+
+
                 }
+
+
+
                 else
+
+
+
                 {
+
+
+
                     if (compchoice == 2)
+
+
+
                     {
+
+
+
                         compchoices = "Paper";
+
+
+
                     }
+
+
+
                     else
+
+
+
                     {
+
+
+
                         if (compchoice == 3)
+
+
+
                         {
+
+
+
                             compchoices = "Scissors";
+
+
+
                         }
+
+
+
                         else
+
+
+
                         {
+
+
+
                             Console.WriteLine("Quitting...");
+
+
+
                             Environment.Exit(0);
+
+
+
                         }
+
+
+
                     }
+
+
+
                 }
+
+
+
                 // If userchoice statements  
+
+
+
                 if (userchoice == "R")
+
+
+
                 {
+
+
+
                     userchoices = "Rock";
+
+
+
                 }
+
+
+
                 else
+
+
+
                 {
+
+
+
                     if (userchoice == "P")
+
+
+
                     {
+
+
+
                         userchoices = "Paper";
+
+
+
                     }
+
+
+
                     else
+
+
+
                     {
 
 
