@@ -8,7 +8,8 @@ namespace UltimateChatbotProject
         static void Main(string[] args)
         {
             Random gen = new Random();
-            Console.WriteLine("Welcome to Assistant. I'm your chatbot today. What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
+            Console.WriteLine("Welcome to Assistant. I'm your chatbot today.");
+            Console.WriteLine("What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
             ConsoleKeyInfo button = Console.ReadKey();
             if (button.Key == ConsoleKey.R)
             {
