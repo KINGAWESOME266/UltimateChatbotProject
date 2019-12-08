@@ -1,0 +1,13 @@
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/hostpolicy.dll
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/hostfxr.dll
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.exe
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.deps.json
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.runtimeconfig.json
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.runtimeconfig.dev.json
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.dll
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.pdb
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.csprojAssemblyReference.cache
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.AssemblyInfoInputs.cache
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.AssemblyInfo.cs
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.dll
+/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Release/netcoreapp2.1/win10-x64/UltimateChatbotProject.pdb

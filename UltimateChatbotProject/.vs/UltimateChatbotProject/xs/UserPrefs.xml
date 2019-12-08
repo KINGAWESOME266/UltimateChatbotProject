@@ -7,10 +7,8 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="UltimateChatbotProject" expanded="True">
-            <Node name="UltimateChatbotProject" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+          <Node name="UltimateChatbotProject" expanded="True" selected="True">
+            <Node name="UltimateChatbotProject" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -18,6 +16,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
