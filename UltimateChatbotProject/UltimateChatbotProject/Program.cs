@@ -5,6 +5,7 @@ namespace UltimateChatbotProject
 {
     class Program
     {
+        //The RPS Function
         public void RPS()
         {
             Random gen = new Random();
@@ -318,8 +319,11 @@ namespace UltimateChatbotProject
 
 
         }
+
+        //The chatbot function
         public void Chat()
         {
+            Program p = new Program();
             Console.WriteLine("\niChatbot is loading...");
             Thread.Sleep(5000);
             Console.WriteLine("Let's Introduce Ourselves");
@@ -452,6 +456,7 @@ namespace UltimateChatbotProject
             {
                 Console.WriteLine();
                 Console.WriteLine("Thank you for the nice rating!\n");
+                
             }
             else
             {
@@ -459,6 +464,8 @@ namespace UltimateChatbotProject
                 Console.WriteLine("I hope to improve for next time.\n");
             }
         }
+
+        //The function for the user to quit the program.
         public void Quit()
         {
             Console.WriteLine();
@@ -466,6 +473,8 @@ namespace UltimateChatbotProject
             Thread.Sleep(5000);
             Environment.Exit(0);
         }
+
+        //The function for the user to decide RPS/Quit.
         public void RPS2C()
         {
             Program p = new Program();
@@ -480,6 +489,8 @@ namespace UltimateChatbotProject
                 p.Quit();
             }
         }
+
+        //The function for the user to decide RPS/Quit.
         public void C2RPS()
         {
             Program p = new Program();
@@ -493,9 +504,10 @@ namespace UltimateChatbotProject
             {
                 p.Quit();
             }
-        }
-        static void Main(string[] args)
+
+            static void Main(string[] args)
         {
+            //The start of the program, with functions for each portion.
             Console.WriteLine("Welcome to Assistant. I'm your chatbot today.");
             Console.WriteLine("What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
             Program p = new Program();
@@ -505,10 +517,10 @@ namespace UltimateChatbotProject
                 p.RPS();
                 p.RPS2C();
             }
-            //The chatbot software below
             else if (button.Key == ConsoleKey.C)
             {
                 p.Chat();
+                p.C2RPS();
                 
             }
             else if (button.Key == ConsoleKey.Q)
