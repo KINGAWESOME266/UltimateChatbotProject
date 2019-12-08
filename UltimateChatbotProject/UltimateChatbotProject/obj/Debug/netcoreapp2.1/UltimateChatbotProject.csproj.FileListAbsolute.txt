@@ -1,5 +1,4 @@
 /Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Debug/netcoreapp2.1/UltimateChatbotProject.csprojAssemblyReference.cache
-/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Debug/netcoreapp2.1/UltimateChatbotProject.csproj.CoreCompileInputs.cache
 /Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Debug/netcoreapp2.1/UltimateChatbotProject.AssemblyInfoInputs.cache
 /Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/Debug/netcoreapp2.1/UltimateChatbotProject.AssemblyInfo.cs
 /Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/bin/Debug/netcoreapp2.1/UltimateChatbotProject.deps.json

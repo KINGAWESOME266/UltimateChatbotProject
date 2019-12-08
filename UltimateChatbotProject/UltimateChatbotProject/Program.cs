@@ -161,7 +161,7 @@ namespace UltimateChatbotProject
                 {
 
 
-
+                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                     Console.WriteLine("It's a draw!!");
 
 
@@ -185,7 +185,7 @@ namespace UltimateChatbotProject
                     {
 
 
-
+                        Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                         Console.WriteLine("The computer wins!");
 
 
@@ -209,7 +209,7 @@ namespace UltimateChatbotProject
                         {
 
 
-
+                            Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                             Console.WriteLine("The User wins!");
 
 
@@ -229,7 +229,7 @@ namespace UltimateChatbotProject
                             if (userchoices == "Paper" && compchoices == "Rock")
 
                             {
-
+                                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                 Console.WriteLine("The User Wins!");
 
                             }
@@ -241,7 +241,7 @@ namespace UltimateChatbotProject
                                 if (userchoices == "Paper" && compchoices == "Scissors")
 
                                 {
-
+                                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("The Computer Wins!");
 
                                 }
@@ -253,7 +253,7 @@ namespace UltimateChatbotProject
                                     if (userchoices == "Paper" && compchoices == "Paper")
 
                                     {
-
+                                        Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                         Console.WriteLine("It's a Draw!");
 
                                     }
@@ -265,7 +265,7 @@ namespace UltimateChatbotProject
                                         if (userchoices == "Scissors" && compchoices == "Scissors")
 
                                         {
-
+                                            Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                             Console.WriteLine("It's a Draw!");
 
                                         }
@@ -277,7 +277,7 @@ namespace UltimateChatbotProject
                                             if (userchoices == "Scissors" && compchoices == "Paper")
 
                                             {
-
+                                                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                                 Console.WriteLine("The User Wins");
 
                                             }
@@ -289,7 +289,7 @@ namespace UltimateChatbotProject
                                                 if (userchoices == "Scissors" && compchoices == "Rock")
 
                                                 {
-
+                                                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                                     Console.WriteLine("The Computer Wins!");
 
                                                 }
@@ -297,7 +297,7 @@ namespace UltimateChatbotProject
                                                 else
 
                                                 {
-
+                                                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                                     Console.WriteLine("Quitting...");
 
                                                     Environment.Exit(0);
@@ -383,13 +383,13 @@ namespace UltimateChatbotProject
                 else
                 {
                     Console.WriteLine("I haven't watched that yet");
-                    Console.WriteLine("Is it available on Netflix?");
+                    Console.WriteLine("Is it available on Netflix? (Y/N)");
                     ConsoleKeyInfo yesbutton = Console.ReadKey();
                     if (yesbutton.Key == ConsoleKey.Y)
                     {
                         Console.WriteLine("I'll check it out");
                     }
-                    else
+                    else if (yesbutton.Key == ConsoleKey.N)
                     {
                         Console.WriteLine("I'll try to watch it somehow");
                     }
@@ -404,7 +404,7 @@ namespace UltimateChatbotProject
                 }
                 else
                 {
-                    Console.WriteLine("Is it on Spotify?");
+                    Console.WriteLine("Is it on Spotify? (Y/N)");
                     var spotifybutton = Console.ReadKey();
                     if (spotifybutton.Key == ConsoleKey.Y)
                     {
@@ -416,10 +416,8 @@ namespace UltimateChatbotProject
                     }
                 }
 
-                Console.WriteLine(name + " do you have any pets?");
+                Console.WriteLine(name + " do you have any pets? (Y/N)");
                 ConsoleKeyInfo pets = Console.ReadKey();
-
-
                 if (pets.Key == ConsoleKey.Y)
                 {
                     Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D) ");
@@ -439,7 +437,7 @@ namespace UltimateChatbotProject
                             Console.WriteLine("Small cats are cute!");
                         }
                     }
-                    else
+                    else if (catdog.Key == ConsoleKey.D)
                     {
                         Console.WriteLine("I don't like dogs");
                     }
@@ -451,7 +449,6 @@ namespace UltimateChatbotProject
 
                 Console.WriteLine("How did you enjoy this chatbot out of 1-10?");
                 var rating = Console.ReadLine();
-
                 if (Convert.ToInt16(rating) > 5)
                 {
                     Console.WriteLine("Thank you for the nice rating!");
