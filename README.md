@@ -8,7 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
+
 1.Visual Studio
 	1.Download from here according to your OS.
 2.Microsoft .NET (Framework if Windows, otherwise Core)
