@@ -509,6 +509,7 @@ namespace UltimateChatbotProject
             else if (button.Key == ConsoleKey.C)
             {
                 p.Chat();
+                p.C2RPS();
                 
             }
             else if (button.Key == ConsoleKey.Q)
