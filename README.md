@@ -10,9 +10,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them.
 
-1. Visual Studio (Download from here according to your OS.)
+1. Visual Studio (Download from [here](https://visualstudio.microsoft.com/) according to your OS.)
 
-2. Microsoft .NET (Framework if Windows, otherwise Core). Download according to OS.
+2. Microsoft .NET from [here](https://dotnet.microsoft.com/)(Framework if Windows, otherwise Core). Download according to OS.
 
 
 
