@@ -14,7 +14,7 @@ namespace UltimateChatbotProject
             if (button.Key == ConsoleKey.R)
             {
                 Console.WriteLine("Welcome to Rock, Paper, Scissors!");
-                Console.WriteLine("Type R (Rock), P (Paper), or S (Scissors)!");
+                Console.WriteLine("Type R/r (Rock), P/p (Paper), or S/s (Scissors)!");
                 
                 string compchoices = "";
 
@@ -326,8 +326,7 @@ namespace UltimateChatbotProject
             //The chatbot software below
             else if (button.Key == ConsoleKey.C)
             {
-                Console.WriteLine("");
-                Console.WriteLine("iChatbot is loading...");
+                Console.WriteLine("\niChatbot is loading...");
                 Thread.Sleep(5000);
                 Console.WriteLine("Let's Introduce Ourselves");
                 Console.WriteLine("My name is Siri. What's yours?");
@@ -335,11 +334,11 @@ namespace UltimateChatbotProject
 
                 if (name == "Siri")
                 {
-                    Console.WriteLine("Hmmm");
+                    Console.WriteLine("\nHmmm");
                 }
                 else
                 {
-                    Console.WriteLine("Hello" + name + "nice to meet you");
+                    Console.WriteLine("\nHello " + name + " nice to meet you! \n");
                 }
 
                 Console.WriteLine("How old are you");
@@ -347,121 +346,130 @@ namespace UltimateChatbotProject
 
                 if (Convert.ToInt32(age) == 14)
                 {
-                    Console.WriteLine("Me too!");
-                    Console.WriteLine("What year are you in ?");
+                    Console.WriteLine("\nMe too!");
+                    Console.WriteLine("\nWhat year are you in ?");
                     var year = Console.ReadLine();
                     if (Convert.ToInt16(year) == 10)
                     {
-                        Console.WriteLine("Same!");
+                        Console.WriteLine("\nSame!");
                     }
                     else
                     {
-                        Console.WriteLine("I'm in year 10!");
+                        Console.WriteLine("\nI'm in year 10!");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("I'm 14 years old");
+                    Console.WriteLine("\nI'm 14 years old");
 
                     if (Convert.ToInt16(age) > Convert.ToInt16(14))
                     {
-                        Console.WriteLine("I'm younger than you");
+                        Console.WriteLine("\nI'm younger than you!");
                     }
                     else
                     {
-                        Console.WriteLine("I'm older than you");
+                        Console.WriteLine("\nI'm older than you!");
                     }
                 }
-                Console.WriteLine("What's your favorite TV Show");
+                Console.WriteLine("\nWhat's your favorite TV Show");
                 string Show = Console.ReadLine();
 
                 if (Show == "Designated Survivor")
                 {
-                    Console.WriteLine("That's a great TV Show");
+                    Console.WriteLine("\nThat's a great TV Show");
                 }
 
                 else
                 {
-                    Console.WriteLine("I haven't watched that yet");
-                    Console.WriteLine("Is it available on Netflix? (Y/N)");
+                    Console.WriteLine("\nI haven't watched that yet");
+                    Console.WriteLine("\nIs it available on Netflix? (Y/N)");
                     ConsoleKeyInfo yesbutton = Console.ReadKey();
                     if (yesbutton.Key == ConsoleKey.Y)
                     {
-                        Console.WriteLine("I'll check it out");
+                        Console.WriteLine("\nI'll check it out");
                     }
                     else if (yesbutton.Key == ConsoleKey.N)
                     {
-                        Console.WriteLine("I'll try to watch it somehow");
+                        Console.WriteLine("\nI'll try to watch it somehow");
                     }
                 }
 
-                Console.WriteLine("What's your favorite song?");
+                Console.WriteLine("\nWhat's your favorite song?");
                 string song = Console.ReadLine();
 
                 if (song == "Secreto")
                 {
-                    Console.WriteLine("I love that song!");
+                    Console.WriteLine("\nI love that song!");
                 }
                 else
                 {
-                    Console.WriteLine("Is it on Spotify? (Y/N)");
+                    Console.WriteLine("\nIs it on Spotify? (Y/N)");
                     var spotifybutton = Console.ReadKey();
                     if (spotifybutton.Key == ConsoleKey.Y)
                     {
-                        Console.WriteLine("I'll listen to it soon.");
+                        Console.WriteLine("\nI'll listen to it soon.");
                     }
                     else if (spotifybutton.Key == ConsoleKey.N)
                     {
-                        Console.WriteLine("I'll try to listen to it sometime.");
+                        Console.WriteLine("\nI'll try to listen to it sometime.");
                     }
                 }
 
-                Console.WriteLine(name + " do you have any pets? (Y/N)");
+                Console.WriteLine(name + " do you have any pets? (Y/N)\n");
                 ConsoleKeyInfo pets = Console.ReadKey();
                 if (pets.Key == ConsoleKey.Y)
                 {
-                    Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D) ");
+                    Console.WriteLine();
+                    Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D)\n ");
                     ConsoleKeyInfo catdog = Console.ReadKey();
 
                     if (catdog.Key == ConsoleKey.C)
                     {
-                        Console.WriteLine("I have a cat");
-                        Console.WriteLine("Is your cat big/small? (B/S)");
+                        Console.WriteLine();
+                        Console.WriteLine("I have a cat\n");
+                        Console.WriteLine("Is your cat big/small? (B/S)\n");
                         ConsoleKeyInfo catsize = Console.ReadKey();
                         if (catsize.Key == ConsoleKey.B)
                         {
-                            Console.WriteLine("I like big cats.");
+                            Console.WriteLine();
+                            Console.WriteLine("I like big cats.\n");
                         }
                         else if (catsize.Key == ConsoleKey.S)
                         {
-                            Console.WriteLine("Small cats are cute!");
+                            Console.WriteLine();
+                            Console.WriteLine("Small cats are cute!\n");
                         }
                     }
                     else if (catdog.Key == ConsoleKey.D)
                     {
-                        Console.WriteLine("I don't like dogs");
+                        Console.WriteLine();
+                        Console.WriteLine("I don't like dogs\n");
                     }
                 }
                 else if (pets.Key == ConsoleKey.N)
                 {
-                    Console.WriteLine("I understand");
+                    Console.WriteLine();
+                    Console.WriteLine("I understand\n");
                 }
 
-                Console.WriteLine("How did you enjoy this chatbot out of 1-10?");
+                Console.WriteLine("How did you enjoy this chatbot out of 1-10?\n");
                 var rating = Console.ReadLine();
                 if (Convert.ToInt16(rating) > 5)
                 {
-                    Console.WriteLine("Thank you for the nice rating!");
+                    Console.WriteLine();
+                    Console.WriteLine("Thank you for the nice rating!\n");
                 }
                 else
                 {
-                    Console.WriteLine("I hope to improve for next time.");
+                    Console.WriteLine();
+                    Console.WriteLine("I hope to improve for next time.\n");
                 }
                 
             }
             else if (button.Key == ConsoleKey.Q)
             {
-                Console.WriteLine("Quitting...");
+                Console.WriteLine();
+                Console.WriteLine("Quitting...\n");
                 Thread.Sleep(5000);
                 Environment.Exit(0);
             }
