@@ -1,4 +1,4 @@
-#Notes#
+
 
 public void RPS2C()
         {
@@ -15,6 +15,8 @@ public void RPS2C()
                 p.Quit();
             }
         }
+        
+       
         public void C2RPS()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
