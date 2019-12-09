@@ -8,6 +8,7 @@ namespace UltimateChatbotProject
         public void RPS()
         {
             Random gen = new Random();
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Welcome to Rock, Paper, Scissors!");
             Console.WriteLine("Type R/r (Rock), P/p (Paper), or S/s (Scissors)!");
 
@@ -292,10 +293,7 @@ namespace UltimateChatbotProject
                                             else
 
                                             {
-                                                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
-                                                Console.WriteLine("Quitting...");
-
-                                                Environment.Exit(0);
+                                               
 
                                             }
 
@@ -320,6 +318,7 @@ namespace UltimateChatbotProject
         }
         public void Chat()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\niChatbot is loading...");
             Thread.Sleep(5000);
             Console.WriteLine("Let's Introduce Ourselves");
@@ -461,6 +460,7 @@ namespace UltimateChatbotProject
         }
         public void Quit()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine();
             Console.WriteLine("Quitting...\n");
             Thread.Sleep(5000);
@@ -469,6 +469,7 @@ namespace UltimateChatbotProject
         public void RPS2C()
         {
             Program p = new Program();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nDo you want to go to the chatbot now? (Y/N)");
             ConsoleKeyInfo chatbotyes = Console.ReadKey();
             if (chatbotyes.Key == ConsoleKey.Y)
@@ -482,6 +483,7 @@ namespace UltimateChatbotProject
         }
         public void C2RPS()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Program p = new Program();
             Console.WriteLine("\nDo you want to go to RPS now? (Y/N)");
             ConsoleKeyInfo rpsyes = Console.ReadKey();
@@ -496,6 +498,7 @@ namespace UltimateChatbotProject
         }
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Welcome to Assistant. I'm your chatbot today.");
             Console.WriteLine("What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
             Program p = new Program();
