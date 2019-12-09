@@ -10,7 +10,7 @@ namespace UltimateChatbotProject
             Program p = new Program();
             Random gen = new Random();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Welcome to Rock, Paper, Scissors!");
+            Console.WriteLine("\nWelcome to Rock, Paper, Scissors!");
             Console.WriteLine("Type R/r (Rock), P/p (Paper), or S/s (Scissors)!");
 
             string compchoices = "";
@@ -158,7 +158,7 @@ namespace UltimateChatbotProject
             {
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                 Console.WriteLine("It's a draw!!");
                 p.Appchoice();
                 
@@ -184,7 +184,7 @@ namespace UltimateChatbotProject
                 {
 
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                    Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                     Console.WriteLine("The computer wins!");
                     p.Appchoice();
 
@@ -209,7 +209,7 @@ namespace UltimateChatbotProject
                     {
 
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                        Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                         Console.WriteLine("The User wins!");
                         p.Appchoice();
 
@@ -231,7 +231,7 @@ namespace UltimateChatbotProject
 
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                            Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                             Console.WriteLine("The User Wins!");
                             p.Appchoice();
 
@@ -245,7 +245,7 @@ namespace UltimateChatbotProject
 
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
-                                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                                Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                 Console.WriteLine("The Computer Wins!");
                                 p.Appchoice();
 
@@ -259,7 +259,7 @@ namespace UltimateChatbotProject
 
                                 {
                                     Console.ForegroundColor = ConsoleColor.Green;
-                                    Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                                    Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("It's a Draw!");
                                     p.Appchoice();
 
@@ -273,7 +273,7 @@ namespace UltimateChatbotProject
 
                                     {
                                         Console.ForegroundColor = ConsoleColor.Green;
-                                        Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                                        Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                         Console.WriteLine("It's a Draw!");
                                         p.Appchoice();
 
@@ -287,7 +287,7 @@ namespace UltimateChatbotProject
 
                                         {
                                             Console.ForegroundColor = ConsoleColor.Yellow;
-                                            Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                                            Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                             Console.WriteLine("The User Wins");
                                             p.Appchoice();
 
@@ -301,7 +301,7 @@ namespace UltimateChatbotProject
 
                                             {
                                                 Console.ForegroundColor = ConsoleColor.Red;
-                                                Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
+                                                Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                                 Console.WriteLine("The Computer Wins!");
                                                 p.Appchoice();
 
@@ -331,7 +331,7 @@ namespace UltimateChatbotProject
             Program p = new Program();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\niChatbot is loading...");
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Let's Introduce Ourselves");
             Console.WriteLine("My name is Siri. What's yours?");
@@ -440,7 +440,7 @@ namespace UltimateChatbotProject
             if (pets.Key == ConsoleKey.Y)
             {
                 Console.WriteLine();
-                Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D)\n ");
+                Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D/N)\n ");
                 ConsoleKeyInfo catdog = Console.ReadKey();
 
                 if (catdog.Key == ConsoleKey.C)
@@ -469,6 +469,10 @@ namespace UltimateChatbotProject
                     Console.WriteLine();
                     Console.WriteLine("I don't like dogs\n");
                 }
+                else if (catdog.Key == ConsoleKey.N)
+                {
+                    Console.WriteLine("\nOh! I thought you had a cat or a dog!");
+                }
             }
             else if (pets.Key == ConsoleKey.N)
             {
@@ -477,7 +481,7 @@ namespace UltimateChatbotProject
                 Console.WriteLine("I understand\n");
             }
 
-            Console.WriteLine("How did you enjoy this chatbot out of 1-10?\n");
+            Console.WriteLine("\nHow did you enjoy this chatbot out of 1-10?\n");
             var rating = Console.ReadLine();
             if (Convert.ToInt16(rating) > 5)
             {
@@ -500,7 +504,7 @@ namespace UltimateChatbotProject
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine();
             Console.WriteLine("Quitting...\n");
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
             Environment.Exit(0);
         }
         public void Appchoice()
@@ -533,16 +537,16 @@ namespace UltimateChatbotProject
         public void Even()
         {
             Program p = new Program();
-            Console.WriteLine("Enter a number below...");
+            Console.WriteLine("\nEnter a number below...");
             var num = int.Parse(Console.ReadLine());
             if (num % 2 == 0)
             {
-                Console.WriteLine("This is even!!!");
+                Console.WriteLine("\nThis is even!!!");
                 p.Appchoice();
             }
             else
             {
-                Console.WriteLine("This is odd...");
+                Console.WriteLine("\nThis is odd...");
                 p.Appchoice();
             }
             Console.ReadLine();
@@ -550,7 +554,7 @@ namespace UltimateChatbotProject
         public void Numbers()
         {
             Program p = new Program();
-            Console.WriteLine("Enter a number below, I will count up to that number!");
+            Console.WriteLine("\nEnter a number below, I will count up to that number!");
             int countnum = int.Parse(Console.ReadLine());
             for (int i = 0; i < countnum; i++)
 
@@ -594,6 +598,10 @@ namespace UltimateChatbotProject
             else if (button.Key == ConsoleKey.N)
             {
                 p.Numbers();
+            }
+            else
+            {
+                p.Quit();
             }
 
             //Prevent the application from quitting automatically on completion.
