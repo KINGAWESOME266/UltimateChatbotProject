@@ -8,7 +8,7 @@ namespace UltimateChatbotProject
         public void RPS()
         {
             Random gen = new Random();
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Welcome to Rock, Paper, Scissors!");
             Console.WriteLine("Type R/r (Rock), P/p (Paper), or S/s (Scissors)!");
 
@@ -156,7 +156,7 @@ namespace UltimateChatbotProject
 
             {
 
-
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                 Console.WriteLine("It's a draw!!");
 
@@ -180,7 +180,7 @@ namespace UltimateChatbotProject
 
                 {
 
-
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                     Console.WriteLine("The computer wins!");
 
@@ -204,7 +204,7 @@ namespace UltimateChatbotProject
 
                     {
 
-
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                         Console.WriteLine("The User wins!");
 
@@ -225,6 +225,7 @@ namespace UltimateChatbotProject
                         if (userchoices == "Paper" && compchoices == "Rock")
 
                         {
+                            Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                             Console.WriteLine("The User Wins!");
 
@@ -237,6 +238,7 @@ namespace UltimateChatbotProject
                             if (userchoices == "Paper" && compchoices == "Scissors")
 
                             {
+                                Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                 Console.WriteLine("The Computer Wins!");
 
@@ -249,6 +251,7 @@ namespace UltimateChatbotProject
                                 if (userchoices == "Paper" && compchoices == "Paper")
 
                                 {
+                                    Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("It's a Draw!");
 
@@ -261,6 +264,7 @@ namespace UltimateChatbotProject
                                     if (userchoices == "Scissors" && compchoices == "Scissors")
 
                                     {
+                                        Console.ForegroundColor = ConsoleColor.Green;
                                         Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                         Console.WriteLine("It's a Draw!");
 
@@ -273,6 +277,7 @@ namespace UltimateChatbotProject
                                         if (userchoices == "Scissors" && compchoices == "Paper")
 
                                         {
+                                            Console.ForegroundColor = ConsoleColor.Yellow;
                                             Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                             Console.WriteLine("The User Wins");
 
@@ -285,15 +290,9 @@ namespace UltimateChatbotProject
                                             if (userchoices == "Scissors" && compchoices == "Rock")
 
                                             {
+                                                Console.ForegroundColor = ConsoleColor.Red;
                                                 Console.WriteLine("You did " + userchoices + " and the computer did " + compchoices + "! ");
                                                 Console.WriteLine("The Computer Wins!");
-
-                                            }
-
-                                            else
-
-                                            {
-                                               
 
                                             }
 
