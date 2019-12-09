@@ -326,10 +326,12 @@ namespace UltimateChatbotProject
 
             if (name == "Siri")
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nHmmm");
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\nHello " + name + " nice to meet you! \n");
             }
 
@@ -338,15 +340,19 @@ namespace UltimateChatbotProject
 
             if (Convert.ToInt32(age) == 14)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nMe too!");
                 Console.WriteLine("\nWhat year are you in ?");
                 var year = Console.ReadLine();
+
                 if (Convert.ToInt16(year) == 10)
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nSame!");
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("\nI'm in year 10!");
                 }
             }
@@ -356,10 +362,12 @@ namespace UltimateChatbotProject
 
                 if (Convert.ToInt16(age) > Convert.ToInt16(14))
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nI'm younger than you!");
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("\nI'm older than you!");
                 }
             }
@@ -368,20 +376,24 @@ namespace UltimateChatbotProject
 
             if (Show == "Designated Survivor")
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("\nThat's a great TV Show");
             }
 
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nI haven't watched that yet");
                 Console.WriteLine("\nIs it available on Netflix? (Y/N)");
                 ConsoleKeyInfo yesbutton = Console.ReadKey();
                 if (yesbutton.Key == ConsoleKey.Y)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nI'll check it out");
                 }
                 else if (yesbutton.Key == ConsoleKey.N)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("\nI'll try to watch it somehow");
                 }
             }
@@ -391,10 +403,12 @@ namespace UltimateChatbotProject
 
             if (song == "Secreto")
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("\nI love that song!");
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nIs it on Spotify? (Y/N)");
                 var spotifybutton = Console.ReadKey();
                 if (spotifybutton.Key == ConsoleKey.Y)
@@ -403,6 +417,7 @@ namespace UltimateChatbotProject
                 }
                 else if (spotifybutton.Key == ConsoleKey.N)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("\nI'll try to listen to it sometime.");
                 }
             }
@@ -417,29 +432,34 @@ namespace UltimateChatbotProject
 
                 if (catdog.Key == ConsoleKey.C)
                 {
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine();
                     Console.WriteLine("I have a cat\n");
                     Console.WriteLine("Is your cat big/small? (B/S)\n");
                     ConsoleKeyInfo catsize = Console.ReadKey();
                     if (catsize.Key == ConsoleKey.B)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine();
                         Console.WriteLine("I like big cats.\n");
                     }
                     else if (catsize.Key == ConsoleKey.S)
                     {
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine();
                         Console.WriteLine("Small cats are cute!\n");
                     }
                 }
                 else if (catdog.Key == ConsoleKey.D)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine();
                     Console.WriteLine("I don't like dogs\n");
                 }
             }
             else if (pets.Key == ConsoleKey.N)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine();
                 Console.WriteLine("I understand\n");
             }
@@ -448,11 +468,13 @@ namespace UltimateChatbotProject
             var rating = Console.ReadLine();
             if (Convert.ToInt16(rating) > 5)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine();
                 Console.WriteLine("Thank you for the nice rating!\n");
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine();
                 Console.WriteLine("I hope to improve for next time.\n");
             }
