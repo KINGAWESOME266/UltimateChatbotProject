@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 namespace UltimateChatbotProject
@@ -504,21 +504,23 @@ namespace UltimateChatbotProject
             {
                 p.RPS();
                 p.RPS2C();
+                Console.ReadLine();
             }
             //The chatbot software below
             else if (button.Key == ConsoleKey.C)
             {
                 p.Chat();
                 p.C2RPS();
-                
+                Console.ReadLine();
+
             }
             else if (button.Key == ConsoleKey.Q)
             {
                 p.Quit();
             }
-        
-        //Prevent the application from quitting automatically on completion.
-        Console.ReadLine();
+
+            //Prevent the application from quitting automatically on completion.
+            Console.ReadLine();
         }
     }
 }
