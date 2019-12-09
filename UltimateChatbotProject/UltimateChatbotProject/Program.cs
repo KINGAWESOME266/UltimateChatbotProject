@@ -317,6 +317,7 @@ namespace UltimateChatbotProject
         }
         public void Chat()
         {
+            Program p = new Program();
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\niChatbot is loading...");
             Thread.Sleep(5000);
@@ -471,12 +472,15 @@ namespace UltimateChatbotProject
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine();
                 Console.WriteLine("Thank you for the nice rating!\n");
+                p.Appchoice();
+                
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine();
                 Console.WriteLine("I hope to improve for next time.\n");
+                p.Appchoice();
             }
         }
         public void Quit()
@@ -505,22 +509,25 @@ namespace UltimateChatbotProject
             {
                 p.Even();
             }
-            else if (choicebutton.Key == )
+            else if (choicebutton.Key == ConsoleKey.Q)
             {
-
+                p.Quit();
             }
         }
         public void Even()
         {
+            Program p = new Program();
             Console.WriteLine("Enter a number below...");
             var num = int.Parse(Console.ReadLine());
             if (num % 2 == 0)
             {
                 Console.WriteLine("This is even!!!");
+                p.Appchoice();
             }
             else
             {
                 Console.WriteLine("This is odd...");
+                p.Appchoice();
             }
             Console.ReadLine();
         }
@@ -528,26 +535,29 @@ namespace UltimateChatbotProject
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Welcome to Assistant. I'm your chatbot today.");
-            Console.WriteLine("What do you want to do (R = RockPaperScissors, C = iChatbot, Q = Quit)");
+            Console.WriteLine("What do you want to do (R = RockPaperScissors, C = iChatbot, E = Even or Not, Q = Quit)");
             Program p = new Program();
             ConsoleKeyInfo button = Console.ReadKey();
             if (button.Key == ConsoleKey.R)
             {
                 p.RPS();
-                p.RPS2C();
                 Console.ReadLine();
             }
             //The chatbot software below
             else if (button.Key == ConsoleKey.C)
             {
                 p.Chat();
-                p.C2RPS();
                 Console.ReadLine();
 
             }
             else if (button.Key == ConsoleKey.Q)
             {
                 p.Quit();
+            }
+            else if (button.Key == ConsoleKey.E)
+            {
+                p.Even();
+                
             }
 
             //Prevent the application from quitting automatically on completion.
