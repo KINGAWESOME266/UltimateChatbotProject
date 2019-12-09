@@ -487,35 +487,42 @@ namespace UltimateChatbotProject
             Thread.Sleep(5000);
             Environment.Exit(0);
         }
-        public void RPS2C()
+        public void Appchoice()
         {
             Program p = new Program();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nDo you want to go to the chatbot now? (Y/N)");
-            ConsoleKeyInfo chatbotyes = Console.ReadKey();
-            if (chatbotyes.Key == ConsoleKey.Y)
-            {
-                p.Chat();
-            }
-            else if (chatbotyes.Key == ConsoleKey.N)
-            {
-                p.Quit();
-            }
-        }
-        public void C2RPS()
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Program p = new Program();
-            Console.WriteLine("\nDo you want to go to RPS now? (Y/N)");
-            ConsoleKeyInfo rpsyes = Console.ReadKey();
-            if (rpsyes.Key == ConsoleKey.Y)
+            Console.WriteLine("What do you want to do now?");
+            Console.WriteLine("R = RockPaperScissors, C = Chatbot, E = Even, Q = Quit");
+            ConsoleKeyInfo choicebutton = Console.ReadKey();
+            if (choicebutton.Key == ConsoleKey.R)
             {
                 p.RPS();
             }
-            else if (rpsyes.Key == ConsoleKey.N)
+            else if (choicebutton.Key == ConsoleKey.C)
             {
-                p.Quit();
+                p.Chat();
             }
+            else if (choicebutton.Key == ConsoleKey.E)
+            {
+                p.Even();
+            }
+            else if (choicebutton.Key == )
+            {
+
+            }
+        }
+        public void Even()
+        {
+            Console.WriteLine("Enter a number below...");
+            var num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("This is even!!!");
+            }
+            else
+            {
+                Console.WriteLine("This is odd...");
+            }
+            Console.ReadLine();
         }
         static void Main(string[] args)
         {
