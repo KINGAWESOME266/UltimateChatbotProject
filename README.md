@@ -24,6 +24,8 @@ A step by step series of examples that tell you how to get this program running 
 
 2.Open Visual Studio and setup.
 
+3. ***Install Microsoft .NET Core/Framework and Install before continuing***
+
 3.Once setup is completed, open the program.cs file from the downloaded repository.
 
 4.Find the :arrow_forward: icon, near top-middle on Windows, top-left on Mac/Linux.
@@ -33,7 +35,7 @@ A step by step series of examples that tell you how to get this program running 
 
 ## Deployment
 
-This version is only for development/testing. A future version will include the final packages for live public use.
+This version is **only** for **development/testing**. A future version **may** include the final packages for live public use.
 
 ## Built With
 
@@ -43,7 +45,7 @@ This version is only for development/testing. A future version will include the 
 
 ## Contributing
 
-This code is private and must not be openly displayed.
+This code is **private** and must **not** be openly displayed.
 
 ## Versioning
 
