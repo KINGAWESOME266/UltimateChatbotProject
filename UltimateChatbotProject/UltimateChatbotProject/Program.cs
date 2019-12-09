@@ -20,8 +20,8 @@ namespace UltimateChatbotProject
             ConsoleKeyInfo userchoice = Console.ReadKey();
 
 
-
-            int compchoice = gen.Next(0, 4);
+            int compchoice = gen.Next(1,3);
+            
 
 
 
@@ -90,28 +90,6 @@ namespace UltimateChatbotProject
 
 
                     }
-
-
-
-                    else
-
-
-
-                    {
-
-
-
-                        Console.WriteLine("Quitting...");
-
-
-
-                        Environment.Exit(0);
-
-
-
-                    }
-
-
 
                 }
 
@@ -360,12 +338,12 @@ namespace UltimateChatbotProject
 
                 if (Convert.ToInt16(year) == 10)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nSame!");
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nI'm in year 10!");
                 }
             }
