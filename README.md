@@ -24,7 +24,7 @@ A step by step series of examples that tell you how to get this program running 
 
 2.Open Visual Studio and setup.
 
-3.***Install Microsoft .NET Core/Framework and Install before continuing***
+3.**Install Microsoft .NET Core/Framework and Install before continuing**
 
 4.Once setup is completed, open the program.cs file from the downloaded repository.
 
