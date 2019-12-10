@@ -20,8 +20,8 @@ namespace UltimateChatbotProject
             ConsoleKeyInfo userchoice = Console.ReadKey();
 
 
-            int compchoice = gen.Next(1,3);
-            
+            int compchoice = gen.Next(1, 3);
+
 
 
 
@@ -124,62 +124,25 @@ namespace UltimateChatbotProject
             {
                 userchoices = "Scissors";
             }
-
             // If userchoice and compchoice statements  
-
-
-
             if (userchoices == "Rock" && compchoices == "Rock")
-
-
-
             {
-
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                 Console.WriteLine("It's a draw!!");
                 p.Appchoice();
-                
-
-
-
             }
-
-
-
             else
-
-
-
             {
-
-
-
                 if (userchoices == "Rock" && compchoices == "Paper")
-
-
-
                 {
-
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                     Console.WriteLine("The computer wins!");
                     p.Appchoice();
-
-
-
                 }
-
-
-
                 else
-
-
-
                 {
-
-
-
                     if (userchoices == "Rock" && compchoices == "Scissors")
 
 
@@ -467,7 +430,7 @@ namespace UltimateChatbotProject
                 Console.WriteLine();
                 Console.WriteLine("Thank you for the nice rating!\n");
                 p.Appchoice();
-                
+
             }
             else
             {
@@ -487,9 +450,10 @@ namespace UltimateChatbotProject
         }
         public void Appchoice()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Program p = new Program();
             Console.WriteLine("What do you want to do now?");
-            Console.WriteLine("R = RockPaperScissors, C = Chatbot, E = Even, N = Number Counter, Q = Quit");
+            Console.WriteLine("R = RockPaperScissors, C = Chatbot, E = Even, N = Number Counter, M = Magic 8 Ball, Q = Quit");
             ConsoleKeyInfo choicebutton = Console.ReadKey();
             if (choicebutton.Key == ConsoleKey.R)
             {
@@ -510,6 +474,10 @@ namespace UltimateChatbotProject
             else if (choicebutton.Key == ConsoleKey.N)
             {
                 p.Numbers();
+            }
+            else if (choicebutton.Key == ConsoleKey.M)
+            {
+                p.Magic8();
             }
         }
         public void Even()
@@ -544,12 +512,76 @@ namespace UltimateChatbotProject
             p.Appchoice();
             Console.ReadLine();
         }
-        static void Main(string[] args)
+        public void Magic8()
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Program p = new Program();
+            Random gen = new Random();
+            Console.WriteLine("Welcome to Magic 8 Ball. Write your question below: ");
+            string question = Console.ReadLine();
+            int random = gen.Next(8);
+            if (random == 1)
+            {
+                Console.WriteLine("Definitely not! ");
+            }
+            else
+            {
+                if (random == 2)
+                {
+                    Console.WriteLine("Highly Unlikely!");
+                }
+                else
+                {
+                    if (random == 3)
+
+                    {
+                        Console.WriteLine("Unlikely...");
+                    }
+                    else
+                    {
+                        if (random == 4)
+                        {
+                            Console.WriteLine("Even... Could be or could be not...");
+                        }
+                        else
+                        {
+                            if (random == 5)
+                            {
+                                Console.WriteLine("Likely!");
+                            }
+                            else
+                            {
+                                if (random == 6)
+                                {
+                                    Console.WriteLine("Highly Likely!");
+                                }
+                                else
+                                {
+                                    if (random == 7)
+                                    {
+                                        Console.WriteLine("Imminent!");
+                                    }
+                                    else
+                                    {
+                                        if (random == 8)
+                                        {
+                                            Console.WriteLine("Congratulations! It will happen!");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                p.Appchoice();
+                Console.ReadLine();
+            }
+        }
+        public void Page1()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Welcome to Assistant. I'm your chatbot today.");
             Console.WriteLine("What do you want to do?");
-            Console.WriteLine("(R = RockPaperScissors, C = iChatbot, E = Even or Not, N = Number Counter, Q = Quit)");
+            Console.WriteLine("(R = RockPaperScissors, C = iChatbot, E = Even or Not, Press -> for more!)");
             Program p = new Program();
             ConsoleKeyInfo button = Console.ReadKey();
             if (button.Key == ConsoleKey.R)
@@ -557,30 +589,54 @@ namespace UltimateChatbotProject
                 p.RPS();
                 Console.ReadLine();
             }
-            //The chatbot software below
+            else if (button.Key == ConsoleKey.RightArrow)
+            {
+                p.Page2();
+            }
             else if (button.Key == ConsoleKey.C)
             {
                 p.Chat();
                 Console.ReadLine();
 
             }
-            else if (button.Key == ConsoleKey.Q)
-            {
-                p.Quit();
-            }
             else if (button.Key == ConsoleKey.E)
             {
                 p.Even();
-                
-            }
-            else if (button.Key == ConsoleKey.N)
-            {
-                p.Numbers();
+
             }
             else
             {
                 p.Quit();
             }
+        }
+        public void Page2()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Program p = new Program();
+            Console.WriteLine("N = Number Counter, M = Magic 8 Ball, Q = Quit, Press <- to go back)");
+            ConsoleKeyInfo button2 = Console.ReadKey();
+            if (button2.Key == ConsoleKey.N)
+            {
+                p.Numbers();
+            }
+            else if (button2.Key == ConsoleKey.M)
+            {
+                p.Magic8();
+            }
+            else if (button2.Key == ConsoleKey.Q)
+            {
+                p.Quit();
+            }
+            else if (button2.Key == ConsoleKey.LeftArrow)
+            {
+                p.Page1();
+            }
+            
+        }
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            p.Page1();
 
             //Prevent the application from quitting automatically on completion.
             Console.ReadLine();
