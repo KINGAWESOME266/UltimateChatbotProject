@@ -46,7 +46,8 @@ This version is **only** for **development/testing**. A future version **may** i
 ## Contributing
 
 This code is **private** and must **not** be openly displayed.
-
+## Security
+Look at [this](https://github.com/KINGAWESOME266/UltimateChatbotProject/edit/master/SECURITY.md) for information.
 ## Versioning
 
 We use GitHub Desktop for versioning.
