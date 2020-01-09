@@ -9,112 +9,39 @@ namespace UltimateChatbotProject
         {
             Program p = new Program();
             Random gen = new Random();
+            string compchoices = "";
+            string userchoices = "";
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nWelcome to Rock, Paper, Scissors!");
             Console.WriteLine("Type R/r (Rock), P/p (Paper), or S/s (Scissors)!");
-
-            string compchoices = "";
-
-            string userchoices = "";
-
             ConsoleKeyInfo userchoice = Console.ReadKey();
 
-
             int compchoice = gen.Next(1, 3);
-
-
-
-
             // If compchoice statements  
-
-
-
             if (compchoice == 1)
-
-
-
             {
-
-
-
                 compchoices = "Rock";
-
-
-
             }
-
-
-
             else
-
-
-
             {
-
-
-
                 if (compchoice == 2)
-
-
-
                 {
-
-
-
                     compchoices = "Paper";
-
-
-
                 }
-
-
-
                 else
-
-
-
                 {
-
-
-
                     if (compchoice == 3)
-
-
-
                     {
-
-
-
                         compchoices = "Scissors";
-
-
-
                     }
 
                 }
-
-
-
             }
-
-
-
             // If userchoice statements  
-
-
-
             if (userchoice.Key == ConsoleKey.R)
-
-
-
             {
-
-
-
                 userchoices = "Rock";
-
-
-
             }
             else if (userchoice.Key == ConsoleKey.P)
             {
@@ -144,98 +71,59 @@ namespace UltimateChatbotProject
                 else
                 {
                     if (userchoices == "Rock" && compchoices == "Scissors")
-
-
-
                     {
 
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                         Console.WriteLine("The User wins!");
                         p.Appchoice();
-
-
-
                     }
-
-
-
                     else
-
-
-
                     {
-
-
-
                         if (userchoices == "Paper" && compchoices == "Rock")
-
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                             Console.WriteLine("The User Wins!");
                             p.Appchoice();
-
                         }
-
                         else
-
                         {
-
                             if (userchoices == "Paper" && compchoices == "Scissors")
-
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                 Console.WriteLine("The Computer Wins!");
                                 p.Appchoice();
-
                             }
-
                             else
-
                             {
-
                                 if (userchoices == "Paper" && compchoices == "Paper")
-
                                 {
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("It's a Draw!");
-                                    p.Appchoice();
-
-                                }
+                                    p.Appchoice();                                }
 
                                 else
-
                                 {
-
                                     if (userchoices == "Scissors" && compchoices == "Scissors")
-
                                     {
                                         Console.ForegroundColor = ConsoleColor.Green;
                                         Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                         Console.WriteLine("It's a Draw!");
                                         p.Appchoice();
-
                                     }
-
                                     else
-
                                     {
-
                                         if (userchoices == "Scissors" && compchoices == "Paper")
-
                                         {
                                             Console.ForegroundColor = ConsoleColor.Yellow;
                                             Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                             Console.WriteLine("The User Wins");
                                             p.Appchoice();
-
                                         }
-
                                         else
-
                                         {
                                             if (userchoices == "Scissors" && compchoices == "Rock")
                                             {
@@ -281,7 +169,6 @@ namespace UltimateChatbotProject
                 Console.WriteLine("\nMe too!");
                 Console.WriteLine("\nWhat year are you in ?");
                 var year = Console.ReadLine();
-
                 if (Convert.ToInt16(year) == 10)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -296,7 +183,6 @@ namespace UltimateChatbotProject
             else
             {
                 Console.WriteLine("\nI'm 14 years old");
-
                 if (Convert.ToInt16(age) > Convert.ToInt16(14))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -361,7 +247,6 @@ namespace UltimateChatbotProject
                 Console.WriteLine();
                 Console.WriteLine("Do you have a cat or a dog " + name + " ?" + " (C/D/N)\n ");
                 ConsoleKeyInfo catdog = Console.ReadKey();
-
                 if (catdog.Key == ConsoleKey.C)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -512,7 +397,6 @@ namespace UltimateChatbotProject
                 else
                 {
                     if (random == 3)
-
                     {
                         Console.WriteLine("Unlikely...");
                         p.Appchoice();
@@ -630,7 +514,7 @@ namespace UltimateChatbotProject
             int num2 = 0;
             Program p = new Program();
             // Display title as the C# console calculator app.
-            Console.WriteLine("\nConsole Calculator in C#\r");
+            Console.WriteLine("\nWelcome to the Calculator!\r");
             Console.WriteLine("------------------------\n");
 
             // Ask the user to type the first number.
