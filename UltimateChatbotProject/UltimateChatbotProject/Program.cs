@@ -58,6 +58,7 @@ namespace UltimateChatbotProject
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                 Console.WriteLine("It's a draw!!");
+                Console.ReadLine();
                 p.Choices();
             }
             else
@@ -67,6 +68,7 @@ namespace UltimateChatbotProject
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                     Console.WriteLine("The computer wins!");
+                    Console.ReadLine();
                     p.Choices();
                 }
                 else
@@ -77,6 +79,7 @@ namespace UltimateChatbotProject
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                         Console.WriteLine("The User wins!");
+                        Console.ReadLine();
                         p.Choices();
                     }
                     else
@@ -86,6 +89,7 @@ namespace UltimateChatbotProject
                             Console.ForegroundColor = ConsoleColor.Yellow;
                             Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                             Console.WriteLine("The User Wins!");
+                            Console.ReadLine();
                             p.Choices();
                         }
                         else
@@ -95,6 +99,7 @@ namespace UltimateChatbotProject
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                 Console.WriteLine("The Computer Wins!");
+                                Console.ReadLine();
                                 p.Choices();
                             }
                             else
@@ -104,6 +109,7 @@ namespace UltimateChatbotProject
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("It's a Draw!");
+                                    Console.ReadLine();
                                     p.Choices();                                }
 
                                 else
@@ -113,6 +119,7 @@ namespace UltimateChatbotProject
                                         Console.ForegroundColor = ConsoleColor.Green;
                                         Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                         Console.WriteLine("It's a Draw!");
+                                        Console.ReadLine();
                                         p.Choices();
                                     }
                                     else
@@ -122,6 +129,7 @@ namespace UltimateChatbotProject
                                             Console.ForegroundColor = ConsoleColor.Yellow;
                                             Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                             Console.WriteLine("The User Wins");
+                                            Console.ReadLine();
                                             p.Choices();
                                         }
                                         else
@@ -131,6 +139,7 @@ namespace UltimateChatbotProject
                                                 Console.ForegroundColor = ConsoleColor.Red;
                                                 Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                                 Console.WriteLine("The Computer Wins!");
+                                                Console.ReadLine();
                                                 p.Choices();
                                             }
                                         }
@@ -358,11 +367,13 @@ namespace UltimateChatbotProject
             if (num % 2 == 0)
             {
                 Console.WriteLine("\nThis is even!!!");
+                Console.ReadLine();
                 p.Choices();
             }
             else
             {
                 Console.WriteLine("\nThis is odd...");
+                Console.ReadLine();
                 p.Choices();
             }
             Console.ReadLine();
@@ -380,6 +391,7 @@ namespace UltimateChatbotProject
             ConsoleKeyInfo choices = Console.ReadKey();
             if (choices.Key == ConsoleKey.Enter)
             {
+                Console.ReadLine();
                 p.Choices();
             }
             else
@@ -400,6 +412,7 @@ namespace UltimateChatbotProject
             if (random == 1)
             {
                 Console.WriteLine("Definitely not! ");
+                Console.ReadLine();
                 p.Choices();
             }
             else
@@ -407,6 +420,7 @@ namespace UltimateChatbotProject
                 if (random == 2)
                 {
                     Console.WriteLine("Highly Unlikely!");
+                    Console.ReadLine();
                     p.Choices();
                 }
                 else
@@ -414,6 +428,7 @@ namespace UltimateChatbotProject
                     if (random == 3)
                     {
                         Console.WriteLine("Unlikely...");
+                        Console.ReadLine();
                         p.Choices();
                     }
                     else
@@ -421,6 +436,7 @@ namespace UltimateChatbotProject
                         if (random == 4)
                         {
                             Console.WriteLine("Even... Could be or could be not...");
+                            Console.ReadLine();
                             p.Choices();
                         }
                         else
@@ -428,6 +444,7 @@ namespace UltimateChatbotProject
                             if (random == 5)
                             {
                                 Console.WriteLine("Likely!");
+                                Console.ReadLine();
                                 p.Choices();
                             }
                             else
@@ -435,6 +452,7 @@ namespace UltimateChatbotProject
                                 if (random == 6)
                                 {
                                     Console.WriteLine("Highly Likely!");
+                                    Console.ReadLine();
                                     p.Choices();
                                 }
                                 else
@@ -442,6 +460,7 @@ namespace UltimateChatbotProject
                                     if (random == 7)
                                     {
                                         Console.WriteLine("Imminent!");
+                                        Console.ReadLine();
                                         p.Choices();
                                     }
                                     else
@@ -449,6 +468,7 @@ namespace UltimateChatbotProject
                                         if (random == 8)
                                         {
                                             Console.WriteLine("Congratulations! It will happen!");
+                                            Console.ReadLine();
                                             p.Choices();
                                         }
                                     }
@@ -555,23 +575,28 @@ namespace UltimateChatbotProject
             if (calckey.Key == ConsoleKey.A)
             {
                 Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
+                Console.ReadLine();
             }
             else if (calckey.Key == ConsoleKey.S)
             {
                 Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                Console.ReadLine();
             }
             else if (calckey.Key == ConsoleKey.M)
             {
                 Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                Console.ReadLine();
             }
             else if (calckey.Key == ConsoleKey.D)
             {
                 Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                Console.ReadLine();
             }
             else
             {
                 p.Quit();
             }
+            Console.ReadLine();
             p.Choices();
             Console.ReadLine();
         }
