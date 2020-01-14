@@ -110,7 +110,8 @@ namespace UltimateChatbotProject
                                     Console.WriteLine("\nYou did " + userchoices + " and the computer did " + compchoices + "! ");
                                     Console.WriteLine("It's a Draw!");
                                     Console.ReadLine();
-                                    p.Choices();                                }
+                                    p.Choices();
+                                }
 
                                 else
                                 {
@@ -207,7 +208,7 @@ namespace UltimateChatbotProject
             }
             Console.WriteLine("\nWhat's your favorite TV Show");
             string Show = Console.ReadLine();
-            if (Show == "Designated Survivor")
+            if (Show == "Designated Survivor" ^ Show == "designated survivor")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nThat's a great TV Show");
@@ -231,7 +232,7 @@ namespace UltimateChatbotProject
             }
             Console.WriteLine("\nWhat's your favorite song?");
             string song = Console.ReadLine();
-            if (song == "Secreto")
+            if (song == "Secreto" ^ song == "secreto")
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\nI love that song!");
@@ -380,6 +381,7 @@ namespace UltimateChatbotProject
         }
         public void Numbers()
         {
+            Console.Clear();
             Program p = new Program();
             Console.WriteLine("\nEnter a number below, I will count up to that number!");
             int countnum = int.Parse(Console.ReadLine());
@@ -387,7 +389,7 @@ namespace UltimateChatbotProject
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine("Press enter for choices");            
+            Console.WriteLine("Press enter for choices");
             ConsoleKeyInfo choices = Console.ReadKey();
             if (choices.Key == ConsoleKey.Enter)
             {
@@ -397,7 +399,7 @@ namespace UltimateChatbotProject
             else
             {
                 p.Quit();
-            }            
+            }
             Console.ReadLine();
         }
         public void Magic8()
@@ -407,7 +409,7 @@ namespace UltimateChatbotProject
             Random gen = new Random();
             Console.WriteLine("Welcome to Magic 8 Ball. Write your question below: ");
             string question = Console.ReadLine();
-            int random = gen.Next(1,8);
+            int random = gen.Next(1, 8);
             Console.WriteLine(random);
             if (random == 1)
             {
@@ -476,7 +478,7 @@ namespace UltimateChatbotProject
                             }
                         }
                     }
-                }                
+                }
                 Console.ReadLine();
             }
         }
@@ -536,15 +538,16 @@ namespace UltimateChatbotProject
             else if (button2.Key == ConsoleKey.X)
             {
                 p.Calc();
-            }            
+            }
             else if (button2.Key == ConsoleKey.LeftArrow)
             {
                 p.Page1();
             }
-            
+
         }
         public void Calc()
         {
+            Console.Clear();
             // Declare variables and then initialize to zero.
             Console.ForegroundColor = ConsoleColor.Cyan;
             int num1 = 0;
