@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj": {}
+    "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj": {}
   },
   "projects": {
-    "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj": {
+    "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj",
+        "projectUniqueName": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj",
         "projectName": "UltimateChatbotProject",
-        "projectPath": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj",
+        "projectPath": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject.csproj",
         "packagesPath": "/Users/surajshenoy/.nuget/packages/",
-        "outputPath": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/UltimateChatbotProject/obj/",
+        "outputPath": "/Users/surajshenoy/Documents/GitHub/UltimateChatbotProject/UltimateChatbotProject/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/surajshenoy/.config/NuGet/NuGet.Config"
+          "/Users/surajshenoy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -56,7 +56,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
         }
       }
     }
