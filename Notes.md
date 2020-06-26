@@ -2,7 +2,7 @@
 
 public void RPS2C()
         {
-            Program p = new Program();
+            
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\nDo you want to go to the chatbot now? (Y/N)");
             ConsoleKeyInfo chatbotyes = Console.ReadKey();
@@ -20,7 +20,7 @@ public void RPS2C()
         public void C2RPS()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Program p = new Program();
+            
             Console.WriteLine("\nDo you want to go to RPS now? (Y/N)");
             ConsoleKeyInfo rpsyes = Console.ReadKey();
             if (rpsyes.Key == ConsoleKey.Y)
